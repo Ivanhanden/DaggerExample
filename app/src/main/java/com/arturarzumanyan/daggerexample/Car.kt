@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class Car @Inject constructor(
     @Inject @JvmField var engine: Engine,
-    @Inject @JvmField var wheels: Wheels
+    var wheels: Wheels
 ) {
     companion object {
         const val TAG = "Car"
